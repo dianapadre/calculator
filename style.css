@@ -13,7 +13,7 @@
   width: 100vw;
   min-height: 100vh;
   padding: 2em;
-  background-color: silver;
+  /* background-color: silver; */
   background-image: url(background1.jpg) no-repeat center/cover;
 }
 .calcu {
