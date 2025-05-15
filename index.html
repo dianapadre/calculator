@@ -1,0 +1,36 @@
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="cont">
+  <form class="calcu" name="calc">
+    <h2 class="logo">dp</h2>
+    <!--  RESULT OUTPUT  -->
+    <input class="value" type="text" name="txt" placeholder="0">
+    <!--  CLEAR ALL  -->
+    <span class="num clear" onclick="document.calc.txt.value =''">CA</span>
+    <!--  BACKSPACE  -->
+    <span class="num del" onclick="document.calc.txt.value = calc.txt.value.substring(0, document.calc.txt.value.length*1 -1)"><span class="material-icons-outlined">backspace</span></span>
+    <!--  SQUARED  -->
+    <span class="num exp" onclick="document.calc.txt.value = (Math.pow(calc.txt.value, 2))">x<sup>2</sup></span>
+
+    <span class="num numx" onclick="document.calc.txt.value +='/'">÷</span>
+    <span class="num nums" onclick="document.calc.txt.value +='7'">7</span>
+    <span class="num nums" onclick="document.calc.txt.value +='8'">8</span>
+    <span class="num nums" onclick="document.calc.txt.value +='9'">9</span>
+    <span class="num numx" onclick="document.calc.txt.value +='*'">*</span>
+    <span class="num nums" onclick="document.calc.txt.value +='4'">4</span>
+    <span class="num nums" onclick="document.calc.txt.value +='5'">5</span>
+    <span class="num nums" onclick="document.calc.txt.value +='6'">6</span>
+    <span class="num numx" onclick="document.calc.txt.value +='-'">-</span>
+    <span class="num nums" onclick="document.calc.txt.value +='1'">1</span>
+    <span class="num nums" onclick="document.calc.txt.value +='2'">2</span>
+    <span class="num nums" onclick="document.calc.txt.value +='3'">3</span>
+    <span class="num numx" onclick="document.calc.txt.value +='+'">+</span>
+    <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+    <span class="num nums" onclick="document.calc.txt.value +='0'">0</span>
+    <!--  SQUAREROOT  -->
+    <span class="num" onclick="document.calc.txt.value = Math.sqrt(calc.txt.value)">√</span>
+    <!--  RESULT IS ROUNDED TO 2 DECMAL NUMS  -->
+    <span class="num equals numx" onclick="document.calc.txt.value = Number((eval(calc.txt.value)).toFixed(2));">=</span>
+  </form>
+</div>
