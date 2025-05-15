@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  color: whitesmoke;
+  /*   transition: 0.01s ease-in; */
+}
+.cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2em;
+  background-color: silver;
+  background: url(https://wnmu.edu/wp-content/uploads/sites/36/2014/07/math-and-computer-science-bg-2.jpg)
+    no-repeat center/cover;
+}
+.calcu {
+  display: grid;
+  border-radius: 8px;
+  background: linear-gradient(
+    to bottom right,
+    dimgrey,
+    rgb(37, 37, 37),
+    rgb(46, 45, 45)
+  );
+  padding: 2em;
+  padding-top: 0;
+  color: white;
+  box-shadow: 12px 10px 1.5em 12px rgba(0, 0, 0, 0.4);
+}
+.calcu .logo {
+  user-select: none;
+  padding: 0.8em;
+  grid-column: span 4;
+  text-align: center;
+  justify-self: space-around;
+  font-family: monospace;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.8);
+}
+.calcu .value {
+  grid-column: span 4;
+  height: 100px;
+  width: 328px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 1.9em;
+
+  background: linear-gradient(-45deg, black, rgb(48, 48, 48), black);
+  box-shadow: inset 0 8px 20px black;
+  border: 3px inset dimgrey;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+.calcu .value::selection {
+  background-color: darkolivegreen;
+}
+.calcu span:not(.material-icons-outlined) {
+  user-select: none;
+  font-size: 1.5em;
+  display: flex;
+  width: 80px;
+  height: 70px;
+  background-color: darkolivegreen;
+
+  place-items: center;
+  justify-content: center;
+  margin: 1px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.8);
+  border: 3px outset dimgrey;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+.calcu span.clear {
+  background: rgb(143, 65, 19);
+}
+.calcu span .material-icons-outlined {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  color: silver;
+  font-size: 24px;
+}
+.calcu span.exp {
+  font-size: 24px;
+}
+.calcu span.exp sup {
+  font-size: 16px;
+}
+.calcu span.equals {
+  background: rgb(0, 101, 114);
+}
+.calcu span.nums {
+  background-color: rgb(69, 83, 46);
+}
+.calcu span.del {
+  font-size: 1.3em;
+}
+.calcu span.numx {
+  font-size: 2em;
+}
+.calcu span:not(.material-icons-outlined):hover {
+  filter: brightness(120%);
+}
+.calcu span:active {
+  filter: brightness(100%);
+  transform: scale(0.96);
+}
